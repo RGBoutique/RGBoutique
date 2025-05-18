@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Studio RG - Boutique Premium</title>
+  <meta name="description" content="Boutique Le Studio RG : sneakers collectors, streetwear de luxe, pièces rares authentiques">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/logo/logo.png" type="image/png">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="#"><img src="assets/logo/logo.png" alt="Logo Le Studio RG" class="logo"></a>
+      <button id="burger-btn" class="burger" aria-label="Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#sneakers">Sneakers</a></li>
+        <li><a href="#luxury">Prêt-à-porter</a></li>
+        <li><a href="#accessories">Accessoires</a></li>
+        <li><a href="#delivery">Livraison</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="header">
+    <h1>LE STUDIO RG</h1>
+    <p class="slogan">Sélection exclusive - Authenticité garantie</p>
+  </header>
+
+  <section class="hero fade-in">
+    <h2>Collection Premium Automne/Hiver 2025</h2>
+    <p>Pièces rares, collaborations exclusives et classiques intemporels</p>
+  </section>
+
+  <!-- Filtres avancés -->
+  <section class="filter-bar">
+    <div class="filter-group">
+      <label for="category-filter">Catégorie :</label>
+      <select id="category-filter">
+        <option value="all">Toutes</option>
+        <option value="sneakers">Sneakers</option>
+        <option value="clothing">Vêtements</option>
+        <option value="accessories">Accessoires</option>
+      </select>
+    </div>
+    
+    <div class="filter-group">
+      <label for="brand-filter">Marque :</label>
+      <select id="brand-filter">
+        <option value="all">Toutes</option>
+        <option value="nike-tn">Nike Air Max TN</option>
+        <option value="asics">Asics</option>
+        <option value="new-balance">New Balance</option>
+        <option value="lv">Louis Vuitton</option>
+        <option value="gucci">Gucci</option>
+        <option value="dior">Dior</option>
+        <option value="lacoste">Lacoste</option>
+        <option value="prada">Prada</option>
+      </select>
+    </div>
+    
+    <div class="filter-group">
+      <label for="price-filter">Prix :</label>
+      <select id="price-filter">
+        <option value="all">Tous</option>
+        <option value="0-100">Moins de 100€</option>
+        <option value="100-200">100€ - 200€</option>
+        <option value="200-300">200€ - 300€</option>
+        <option value="300-500">300€ - 500€</option>
+        <option value="500+">500€+</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- Section Sneakers -->
+  <section id="sneakers" class="section fade-in">
+    <h2 class="section-title">Sneakers Collector</h2>
+    
+    <div class="subcategory">
+      <h3>Nike Air Max TN</h3>
+      <ul class="article-list">
+        <!-- Nike TN -->
+        <li class="card" data-brand="nike-tn" data-category="sneakers" data-price="220">
+          <img src="assets/products/nike-tn/tn-triple-black.jpg" alt="Nike TN Triple Black">
+          <h4>TN "Triple Black" (2024)</h4>
+          <div class="sizes">
+            <span class="size">41</span><span class="size">42</span><span class="size">43</span>
+          </div>
+          <p class="price">220€</p>
+          <div class="description">Édition 2024, cuir pleine fleur. Deadstock complet.</div>
+          <span class="badge">Nouveauté</span>
+        </li>
+
+        <li class="card" data-brand="nike-tn" data-category="sneakers" data-price="280">
+          <img src="assets/products/nike-tn/tn-hyper-blue.jpg" alt="Nike TN Hyper Blue">
+          <h4>TN "OG Hyper Blue"</h4>
+          <div class="sizes">
+            <span class="size">40</span><span class="size">41</span><span class="size">42</span>
+          </div>
+          <p class="price">280€</p>
+          <div class="description">Réédition 2023, boîte collector.</div>
+        </li>
+
+        <li class="card" data-brand="nike-tn" data-category="sneakers" data-price="260">
+          <img src="assets/products/nike-tn/tn-sunset.jpg" alt="Nike TN Sunset">
+          <h4>TN "Sunset Gradient"</h4>
+          <div class="sizes">
+            <span class="size">39</span><span class="size">40</span><span class="size">41</span>
+          </div>
+          <p class="price">260€</p>
+          <div class="description">Dégradé orange/rose, édition limitée.</div>
+          <span class="badge">Rare</span>
+        </li>
+
+        <li class="card" data-brand="nike-tn" data-category="sneakers" data-price="240">
+          <img src="assets/products/nike-tn/tn-white-red.jpg" alt="Nike TN White Red">
+          <h4>TN "White/Red"</h4>
+          <div class="sizes">
+            <span class="size">42</span><span class="size">43</span><span class="size">44</span>
+          </div>
+          <p class="price">240€</p>
+          <div class="description">Coloris classique, état neuf.</div>
+        </li>
+
+        <li class="card" data-brand="nike-tn" data-category="sneakers" data-price="300">
+          <img src="assets/products/nike-tn/tn-premium.jpg" alt="Nike TN Premium">
+          <h4>TN Premium "Luxe Pack"</h4>
+          <div class="sizes">
+            <span class="size">40</span><span class="size">41</span>
+          </div>
+          <p class="price">300€</p>
+          <div class="description">Cuir grainé, détails métallisés.</div>
+          <span class="badge">Exclusif</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="subcategory">
+      <h3>Asics</h3>
+      <ul class="article-list">
+        <!-- Asics -->
+        <li class="card" data-brand="asics" data-category="sneakers" data-price="180">
+          <img src="assets/products/asics/gel-kayano.jpg" alt="Asics Gel-Kayano">
+          <h4>Gel-Kayano 14 (Kith)</h4>
+          <div class="sizes">
+            <span class="size">40</span><span class="size">41</span><span class="size">42</span>
+          </div>
+          <p class="price">180€</p>
+          <div class="description">Collaboration Kith, coloris argenté.</div>
+        </li>
+
+        <li class="card" data-brand="asics" data-category="sneakers" data-price="200">
+          <img src="assets/products/asics/gel-lyte-monarch.jpg" alt="Asics Gel-Lyte Monarch">
+          <h4>Gel-Lyte III "Monarch"</h4>
+          <div class="sizes">
+            <span class="size">39</span><span class="size">40</span><span class="size">41</span>
+          </div>
+          <p class="price">200€</p>
+          <div class="description">Pack spécial avec 2 paires de lacets.</div>
+        </li>
+
+        <li class="card" data-brand="asics" data-category="sneakers" data-price="220">
+          <img src="assets/products/asics/gel-quantum.jpg" alt="Asics Gel-Quantum">
+          <h4>Gel-Quantum 360</h4>
+          <div class="sizes">
+            <span class="size">42</span><span class="size">43</span>
+          </div>
+          <p class="price">220€</p>
+          <div class="description">Technologie 360°, confort maximal.</div>
+        </li>
+
+        <li class="card" data-brand="asics" data-category="sneakers" data-price="190">
+          <img src="assets/products/asics/gel-saga.jpg" alt="Asics Gel-Saga">
+          <h4>Gel-Saga "Tokyo"</h4>
+          <div class="sizes">
+            <span class="size">40</span><span class="size">41</span>
+          </div>
+          <p class="price">190€</p>
+          <div class="description">Édition limitée Tokyo Design Studio.</div>
+          <span class="badge">Japan</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="subcategory">
+      <h3>New Balance</h3>
+      <ul class="article-list">
+        <li class="card" data-brand="new-balance" data-category="sneakers" data-price="190">
+          <img src="assets/products/newbalance/550-whitegreen.jpg" alt="NB 550 White Green">
+          <h4>550 "White/Green"</h4>
+          <div class="sizes">
+            <span class="size">40</span><span class="size">41</span><span class="size">42</span>
+          </div>
+          <p class="price">190€</p>
+          <div class="description">Collaboration Aimé Leon Dore.</div>
+        </li>
+
+        <li class="card" data-brand="new-balance" data-category="sneakers" data-price="250">
+          <img src="assets/products/newbalance/990v3-grey.jpg" alt="NB 990v3 Grey">
+          <h4>990v3 "Grey"</h4>
+          <div class="sizes">
+            <span class="size">42</span><span class="size">43</span><span class="size">44</span>
+          </div>
+          <p class="price">250€</p>
+          <div class="description">Made in USA, coloris iconique.</div>
+        </li>
+
+        <li class="card" data-brand="new-balance" data-category="sneakers" data-price="230">
+          <img src="assets/products/newbalance/2002r-protection.jpg" alt="NB 2002R Protection">
+          <h4>2002R "Protection Pack"</h4>
+          <div class="sizes">
+            <span class="size">41</span><span class="size">42</span>
+          </div>
+          <p class="price">230€</p>
+          <div class="description">Détails déstructurés, édition limitée.</div>
+          <span class="badge">Rare</span>
+        </li>
+
+        <li class="card" data-brand="new-balance" data-category="sneakers" data-price="270">
+          <img src="assets/products/newbalance/992-grey.jpg" alt="NB 992 Grey">
+          <h4>992 "Grey"</h4>
+          <div class="sizes">
+            <span class="size">42</span><span class="size">43</span>
+          </div>
+          <p class="price">270€</p>
+          <div class="description">Modèle Made in USA, confort premium.</div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Section Prêt-à-porter -->
+  <section id="luxury" class="section fade-in">
+    <h2 class="section-title">Prêt-à-porter Premium</h2>
+    
+    <div class="subcategory">
+      <h3>T-shirts & Polos</h3>
+      <ul class="article-list">
+        <li class="card" data-brand="lv" data-category="clothing" data-price="320">
+          <img src="assets/products/clothing/lv-tshirt.jpg" alt="T-shirt LV Monogram">
+          <h4>LV Monogram T-Shirt</h4>
+          <div class="sizes">
+            <span class="size">S</span><span class="size">M</span><span class="size">L</span>
+          </div>
+          <p class="price">320€</p>
+          <div class="description">Coton stretch, motif Jacquard.</div>
+        </li>
+
+        <li class="card" data-brand="gucci" data-category="clothing" data-price="280">
+          <img src="assets/products/clothing/gucci-interlock.jpg" alt="T-shirt Gucci">
+          <h4>Gucci Interlock</h4>
+          <div class="sizes">
+            <span class="size">M</span><span class="size">L</span><span class="size">XL</span>
+          </div>
+          <p class="price">280€</p>
+          <div class="description">Motif GG signature, coupe oversize.</div>
+        </li>
+
+        <li class="card" data-brand="lacoste" data-category="clothing" data-price="120">
+          <img src="assets/products/clothing/lacoste-polo.jpg" alt="Polo Lacoste">
+          <h4>Lacoste L.12.12</h4>
+          <div class="sizes">
+            <span class="size">S</span><span class="size">M</span><span class="size">L</span>
+          </div>
+          <p class="price">120€</p>
+          <div class="description">Piqué de coton premium.</div>
+        </li>
+
+        <li class="card" data-brand="dior" data-category="clothing" data-price="350">
+          <img src="assets/products/clothing/dior-oblique.jpg" alt="T-shirt Dior">
+          <h4>Dior Oblique T-Shirt</h4>
+          <div class="sizes">
+            <span class="size">S</span><span class="size">M</span>
+          </div>
+          <p class="price">350€</p>
+          <div class="description">Motif oblique, coupe regular fit.</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="subcategory">
+      <h3>Sweats & Hoodies</h3>
+      <ul class="article-list">
+        <li class="card" data-brand="gucci" data-category="clothing" data-price="420">
+          <img src="assets/products/clothing/gucci-hoodie.jpg" alt="Hoodie Gucci">
+          <h4>Gucci GG Hoodie</h4>
+          <div class="sizes">
+            <span class="size">M</span><span class="size">L</span>
+          </div>
+          <p class="price">420€</p>
+          <div class="description">Coton épais, broderie précise.</div>
+        </li>
+
+        <li class="card" data-brand="balenciaga" data-category="clothing" data-price="380">
+          <img src="assets/products/clothing/balenciaga-sweat.jpg" alt="Sweat Balenciaga">
+          <h4>Balenciaga Logo Sweat</h4>
+          <div class="sizes">
+            <span class="size">S</span><span class="size">M</span><span class="size">L</span>
+          </div>
+          <p class="price">380€</p>
+          <div class="description">Coupe oversized, logo avant.</div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Section Accessoires -->
+  <section id="accessories" class="section fade-in">
+    <h2 class="section-title">Accessoires de Luxe</h2>
+    
+    <div class="subcategory">
+      <h3>Claquettes & Sandales</h3>
+      <ul class="article-list">
+        <li class="card" data-brand="lv" data-category="accessories" data-price="450">
+          <img src="assets/products/accessories/lv-sandals.jpg" alt="Claquettes LV">
+          <h4>LV Monogram Sandales</h4>
+          <div class="sizes">
+            <span class="size">40</span><span class="size">41</span><span class="size">42</span>
+          </div>
+          <p class="price">450€</p>
+          <div class="description">Semelle caoutchouc, logo doré.</div>
+        </li>
+
+        <li class="card" data-brand="dior" data-category="accessories" data-price="380">
+          <img src="assets/products/accessories/dior-sandals.jpg" alt="Claquettes Dior">
+          <h4>Dior Oblique Sandales</h4>
+          <div class="sizes">
+            <span class="size">39</span><span class="size">40</span><span class="size">41</span>
+          </div>
+          <p class="price">380€</p>
+          <div class="description">Motif oblique, bande velcro.</div>
+        </li>
+
+        <li class="card" data-brand="gucci" data-category="accessories" data-price="350">
+          <img src="assets/products/accessories/gucci-sandals.jpg" alt="Claquettes Gucci">
+          <h4>Gucci GG Sandales</h4>
+          <div class="sizes">
+            <span class="size">40</span><span class="size">41</span>
+          </div>
+          <p class="price">350€</p>
+          <div class="description">Cuir souple, détails Web.</div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="subcategory">
+      <h3>Lunettes</h3>
+      <ul class="article-list">
+        <li class="card" data-brand="dior" data-category="accessories" data-price="310">
+          <img src="assets/products/accessories/dior-sideral.jpg" alt="Lunettes Dior">
+          <h4>Dior Sideral</h4>
+          <div class="sizes">
+            <span class="size">Unique</span>
+          </div>
+          <p class="price">310€</p>
+          <div class="description">Verres miroir, monture légère.</div>
+        </li>
+
+        <li class="card" data-brand="gucci" data-category="accessories" data-price="290">
+          <img src="assets/products/accessories/gucci-gg.jpg" alt="Lunettes Gucci">
+          <h4>Gucci GG Acétate</h4>
+          <div class="sizes">
+            <span class="size">Unique</span>
+          </div>
+          <p class="price">290€</p>
+          <div class="description">Logo doré, style rétro.</div>
+        </li>
+
+        <li class="card" data-brand="LV" data-category="accessories" data-price="330">
+          <img src="assets/products/accessories/LunetteLV.PNG" alt="Lunettes LV">
+          <h4>LV Reflector</h4>
+          <div class="sizes">
+            <span class="size">Unique</span>
+          </div>
+          <p class="price">330€</p>
+          <div class="description">Monture sport chic, verres polarisés.</div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Autres sections... -->
+
+  <script src="script.js"></script>
+</body>
+</html>
