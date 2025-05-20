@@ -37,17 +37,7 @@
     <p>Pièces rares, collaborations exclusives et classiques intemporels</p>
   </section>
 
-  <!-- Filtres avancés -->
-  <section class="filter-bar">
-    <div class="filter-group">
-      <label for="category-filter">Catégorie :</label>
-      <select id="category-filter">
-        <option value="all">Toutes</option>
-        <option value="sneakers">Sneakers</option>
-        <option value="clothing">Vêtements</option>
-        <option value="accessories">Accessoires</option>
-      </select>
-    </div>
+ 
     
     <div class="filter-group">
       <label for="brand-filter">Marque :</label>
@@ -64,19 +54,7 @@
       </select>
     </div>
     
-    <div class="filter-group">
-      <label for="price-filter">Prix :</label>
-      <select id="price-filter">
-        <option value="all">Tous</option>
-        <option value="0-100">Moins de 100€</option>
-        <option value="100-200">100€ - 200€</option>
-        <option value="200-300">200€ - 300€</option>
-        <option value="300-500">300€ - 500€</option>
-        <option value="500+">500€+</option>
-      </select>
-    </div>
-  </section>
-
+   
   <!-- Section Sneakers -->
   <section id="sneakers" class="section fade-in">
     <h2 class="section-title">Sneakers Collector</h2>
@@ -86,7 +64,11 @@
       <ul class="article-list">
         <!-- Nike TN -->
         <li class="card" data-brand="nike-tn" data-category="sneakers" data-price="220">
-          <img src="assets/products/nike-tn/tn-triple-black.jpg" alt="Nike TN Triple Black">
+          <div class="image-carousel">
+            <button class="carousel-btn left" onclick="prevImage(this)">&#10094;</button>
+            <img src="assets/products/nike-tn/tn-triple-black.jpg" alt="Nike TN Triple Black" class="carousel-image active">
+            <button class="carousel-btn right" onclick="nextImage(this)">&#10095;</button>
+          </div>
           <h4>TN "Triple Black" (2024)</h4>
           <div class="sizes">
             <span class="size">41</span><span class="size">42</span><span class="size">43</span>
@@ -97,7 +79,11 @@
         </li>
 
         <li class="card" data-brand="nike-tn" data-category="sneakers" data-price="280">
-          <img src="assets/products/nike-tn/tn-hyper-blue.jpg" alt="Nike TN Hyper Blue">
+          <div class="image-carousel">
+            <button class="carousel-btn left" onclick="prevImage(this)">&#10094;</button>
+            <img src="assets/products/nike-tn/tn-hyper-blue.jpg" alt="Nike TN Hyper Blue" class="carousel-image active">
+            <button class="carousel-btn right" onclick="nextImage(this)">&#10095;</button>
+          </div>
           <h4>TN "OG Hyper Blue"</h4>
           <div class="sizes">
             <span class="size">40</span><span class="size">41</span><span class="size">42</span>
@@ -145,7 +131,12 @@
       <ul class="article-list">
         <!-- Asics -->
         <li class="card" data-brand="asics" data-category="sneakers" data-price="180">
-          <img src="assets/products/asics/gel-kayano.jpg" alt="Asics Gel-Kayano">
+          <div class="image-carousel">
+            <button class="carousel-btn left" onclick="prevImage(this)">&#10094;</button>
+            <img src="assets/products/asics/gel-kayano.jpg" alt="Asics Gel-Kayano" class="carousel-image active">
+            <!-- Ajoute d'autres images ici si besoin -->
+            <button class="carousel-btn right" onclick="nextImage(this)">&#10095;</button>
+          </div>
           <h4>Gel-Kayano 14 (Kith)</h4>
           <div class="sizes">
             <span class="size">40</span><span class="size">41</span><span class="size">42</span>
@@ -155,7 +146,11 @@
         </li>
 
         <li class="card" data-brand="asics" data-category="sneakers" data-price="200">
-          <img src="assets/products/asics/gel-lyte-monarch.jpg" alt="Asics Gel-Lyte Monarch">
+          <div class="image-carousel">
+            <button class="carousel-btn left" onclick="prevImage(this)">&#10094;</button>
+            <img src="assets/products/asics/gel-lyte-monarch.jpg" alt="Asics Gel-Lyte Monarch" class="carousel-image active">
+            <button class="carousel-btn right" onclick="nextImage(this)">&#10095;</button>
+          </div>
           <h4>Gel-Lyte III "Monarch"</h4>
           <div class="sizes">
             <span class="size">39</span><span class="size">40</span><span class="size">41</span>
@@ -165,7 +160,11 @@
         </li>
 
         <li class="card" data-brand="asics" data-category="sneakers" data-price="220">
-          <img src="assets/products/asics/gel-quantum.jpg" alt="Asics Gel-Quantum">
+          <div class="image-carousel">
+            <button class="carousel-btn left" onclick="prevImage(this)">&#10094;</button>
+            <img src="assets/products/asics/gel-quantum.jpg" alt="Asics Gel-Quantum" class="carousel-image active">
+            <button class="carousel-btn right" onclick="nextImage(this)">&#10095;</button>
+          </div>
           <h4>Gel-Quantum 360</h4>
           <div class="sizes">
             <span class="size">42</span><span class="size">43</span>
@@ -175,7 +174,11 @@
         </li>
 
         <li class="card" data-brand="asics" data-category="sneakers" data-price="190">
-          <img src="assets/products/asics/gel-saga.jpg" alt="Asics Gel-Saga">
+          <div class="image-carousel">
+            <button class="carousel-btn left" onclick="prevImage(this)">&#10094;</button>
+            <img src="assets/products/asics/gel-saga.jpg" alt="Asics Gel-Saga" class="carousel-image active">
+            <button class="carousel-btn right" onclick="nextImage(this)">&#10095;</button>
+          </div>
           <h4>Gel-Saga "Tokyo"</h4>
           <div class="sizes">
             <span class="size">40</span><span class="size">41</span>
@@ -191,7 +194,12 @@
       <h3>New Balance</h3>
       <ul class="article-list">
         <li class="card" data-brand="new-balance" data-category="sneakers" data-price="190">
-          <img src="assets/products/newbalance/550-whitegreen.jpg" alt="NB 550 White Green">
+          <div class="image-carousel">
+            <button class="carousel-btn left" onclick="prevImage(this)">&#10094;</button>
+            <img src="assets/products/newbalance/550-whitegreen.jpg" alt="NB 550 White Green" class="carousel-image active">
+            <!-- Ajoute d'autres images ici si besoin -->
+            <button class="carousel-btn right" onclick="nextImage(this)">&#10095;</button>
+          </div>
           <h4>550 "White/Green"</h4>
           <div class="sizes">
             <span class="size">40</span><span class="size">41</span><span class="size">42</span>
@@ -201,7 +209,11 @@
         </li>
 
         <li class="card" data-brand="new-balance" data-category="sneakers" data-price="250">
-          <img src="assets/products/newbalance/990v3-grey.jpg" alt="NB 990v3 Grey">
+          <div class="image-carousel">
+            <button class="carousel-btn left" onclick="prevImage(this)">&#10094;</button>
+            <img src="assets/products/newbalance/990v3-grey.jpg" alt="NB 990v3 Grey" class="carousel-image active">
+            <button class="carousel-btn right" onclick="nextImage(this)">&#10095;</button>
+          </div>
           <h4>990v3 "Grey"</h4>
           <div class="sizes">
             <span class="size">42</span><span class="size">43</span><span class="size">44</span>
@@ -211,7 +223,13 @@
         </li>
 
         <li class="card" data-brand="new-balance" data-category="sneakers" data-price="230">
-          <img src="assets/products/newbalance/2002r-protection.jpg" alt="NB 2002R Protection">
+          <div class="image-carousel">
+            <button class="carousel-btn left" onclick="prevImage(this)">&#10094;</button>
+            <img src="assets/products/newbalance/2002R.png" alt="NB 2002R Protection" class="carousel-image active">
+            <img src="assets/products/newbalance/V2002R.png" alt="NB 2002R Protection" class="carousel-image active">
+
+            <button class="carousel-btn right" onclick="nextImage(this)">&#10095;</button>
+          </div>
           <h4>2002R "Protection Pack"</h4>
           <div class="sizes">
             <span class="size">41</span><span class="size">42</span>
@@ -222,7 +240,11 @@
         </li>
 
         <li class="card" data-brand="new-balance" data-category="sneakers" data-price="270">
-          <img src="assets/products/newbalance/992-grey.jpg" alt="NB 992 Grey">
+          <div class="image-carousel">
+            <button class="carousel-btn left" onclick="prevImage(this)">&#10094;</button>
+            <img src="assets/products/newbalance/992-grey.jpg" alt="NB 992 Grey" class="carousel-image active">
+            <button class="carousel-btn right" onclick="nextImage(this)">&#10095;</button>
+          </div>
           <h4>992 "Grey"</h4>
           <div class="sizes">
             <span class="size">42</span><span class="size">43</span>
@@ -234,80 +256,95 @@
     </div>
   </section>
 
-  <!-- Section Prêt-à-porter -->
-  <section id="luxury" class="section fade-in">
-    <h2 class="section-title">Prêt-à-porter Premium</h2>
+ <!-- Section Prêt-à-porter -->
+<section id="luxury" class="section fade-in">
+  <h2 class="section-title">Prêt-à-porter Premium</h2>
+
+  <div class="subcategory">
+    <h3>T-shirts, Polos & Chemises</h3>
+    <ul class="article-list">
+      <li class="card" data-brand="lv" data-category="clothing" data-price="320">
+        <img src="assets/products/clothing/lv-tshirt.jpg" alt="T-shirt LV Monogram">
+        <h4>LV Monogram T-Shirt</h4>
+        <div class="sizes">
+          <span class="size">S</span><span class="size">M</span><span class="size">L</span>
+        </div>
+        <p class="price">320€</p>
+        <div class="description">Coton stretch, motif Jacquard.</div>
+      </li>
+
+      <li class="card" data-brand="gucci" data-category="clothing" data-price="280">
+  <div class="image-carousel">
+    <button class="carousel-btn left" onclick="prevImage(this)">&#10094;</button>
+    <img src="assets/products/clothing/gucci-interlock.jpg" alt="T-shirt Gucci" class="carousel-image active">
+    <button class="carousel-btn right" onclick="nextImage(this)">&#10095;</button>
+  </div>
+  <h4>Gucci Interlock</h4>
+  <div class="sizes">
+    <span class="size">M</span><span class="size">L</span><span class="size">XL</span>
+  </div>
+  <p class="price">280€</p>
+  <div class="description">Motif GG signature, coupe oversize.</div>
+</li>
+
+      <li class="card" data-brand="dior" data-category="clothing" data-price="350">
+  <div class="image-carousel">
+    <button class="carousel-btn left" onclick="prevImage(this)">&#10094;</button>
+    <img src="assets/products/clothing/dior-oblique.jpg" alt="T-shirt Dior" class="carousel-image active">
+    <button class="carousel-btn right" onclick="nextImage(this)">&#10095;</button>
+  </div>
+  <h4>Dior Oblique T-Shirt</h4>
+  <div class="sizes">
+    <span class="size">S</span><span class="size">M</span>
+  </div>
+  <p class="price">350€</p>
+  <div class="description">Motif oblique, coupe regular fit.</div>
+</li>
+
+     <li class="card" data-brand="prada" data-category="clothing" data-price="150">
+  <div class="image-carousel">
+    <button class="carousel-btn left" onclick="prevImage(this)">&#10094;</button>
     
-    <div class="subcategory">
-      <h3>T-shirts & Polos</h3>
-      <ul class="article-list">
-        <li class="card" data-brand="lv" data-category="clothing" data-price="320">
-          <img src="assets/products/clothing/lv-tshirt.jpg" alt="T-shirt LV Monogram">
-          <h4>LV Monogram T-Shirt</h4>
-          <div class="sizes">
-            <span class="size">S</span><span class="size">M</span><span class="size">L</span>
-          </div>
-          <p class="price">320€</p>
-          <div class="description">Coton stretch, motif Jacquard.</div>
-        </li>
+    <img src="assets/products/prada/pradachemise.png" alt="Chemise Prada" class="carousel-image active">
+    <img src="assets/products/prada/prada2.png" alt="Chemise Prada dos" class="carousel-image">
 
-        <li class="card" data-brand="gucci" data-category="clothing" data-price="280">
-          <img src="assets/products/clothing/gucci-interlock.jpg" alt="T-shirt Gucci">
-          <h4>Gucci Interlock</h4>
-          <div class="sizes">
-            <span class="size">M</span><span class="size">L</span><span class="size">XL</span>
-          </div>
-          <p class="price">280€</p>
-          <div class="description">Motif GG signature, coupe oversize.</div>
-        </li>
+    <button class="carousel-btn right" onclick="nextImage(this)">&#10095;</button>
+  </div>
 
-        <li class="card" data-brand="lacoste" data-category="clothing" data-price="120">
-          <img src="assets/products/clothing/lacoste-polo.jpg" alt="Polo Lacoste">
-          <h4>Lacoste L.12.12</h4>
-          <div class="sizes">
-            <span class="size">S</span><span class="size">M</span><span class="size">L</span>
-          </div>
-          <p class="price">120€</p>
-          <div class="description">Piqué de coton premium.</div>
-        </li>
+  <h4>Chemise Prada</h4>
+  <div class="sizes">
+    <span class="size">S</span><span class="size">M</span><span class="size">L</span><span class="size">XL</span><span class="size">XXL</span>
+  </div>
+  <p class="price">150€</p>
+  <div class="description">Cette chemise carrée à manches courtes dégage un charme moderne.</div>
+</li>
 
-        <li class="card" data-brand="dior" data-category="clothing" data-price="350">
-          <img src="assets/products/clothing/dior-oblique.jpg" alt="T-shirt Dior">
-          <h4>Dior Oblique T-Shirt</h4>
-          <div class="sizes">
-            <span class="size">S</span><span class="size">M</span>
-          </div>
-          <p class="price">350€</p>
-          <div class="description">Motif oblique, coupe regular fit.</div>
-        </li>
-      </ul>
-    </div>
+  <div class="subcategory">
+    <h3>Sweats & Hoodies</h3>
+    <ul class="article-list">
+      <li class="card" data-brand="gucci" data-category="clothing" data-price="420">
+        <img src="assets/products/clothing/gucci-hoodie.jpg" alt="Hoodie Gucci">
+        <h4>Gucci GG Hoodie</h4>
+        <div class="sizes">
+          <span class="size">M</span><span class="size">L</span>
+        </div>
+        <p class="price">420€</p>
+        <div class="description">Coton épais, broderie précise.</div>
+      </li>
 
-    <div class="subcategory">
-      <h3>Sweats & Hoodies</h3>
-      <ul class="article-list">
-        <li class="card" data-brand="gucci" data-category="clothing" data-price="420">
-          <img src="assets/products/clothing/gucci-hoodie.jpg" alt="Hoodie Gucci">
-          <h4>Gucci GG Hoodie</h4>
-          <div class="sizes">
-            <span class="size">M</span><span class="size">L</span>
-          </div>
-          <p class="price">420€</p>
-          <div class="description">Coton épais, broderie précise.</div>
-        </li>
+      <li class="card" data-brand="balenciaga" data-category="clothing" data-price="380">
+        <img src="assets/products/clothing/balenciaga-sweat.jpg" alt="Sweat Balenciaga">
+        <h4>Balenciaga Logo Sweat</h4>
+        <div class="sizes">
+          <span class="size">S</span><span class="size">M</span><span class="size">L</span>
+        </div>
+        <p class="price">380€</p>
+        <div class="description">Coupe oversized, logo avant.</div>
+      </li>
+    </ul>
+  </div>
+</section>
 
-        <li class="card" data-brand="balenciaga" data-category="clothing" data-price="380">
-          <img src="assets/products/clothing/balenciaga-sweat.jpg" alt="Sweat Balenciaga">
-          <h4>Balenciaga Logo Sweat</h4>
-          <div class="sizes">
-            <span class="size">S</span><span class="size">M</span><span class="size">L</span>
-          </div>
-          <p class="price">380€</p>
-          <div class="description">Coupe oversized, logo avant.</div>
-        </li>
-      </ul>
-    </div>
-  </section>
 
   <!-- Section Accessoires -->
   <section id="accessories" class="section fade-in">
@@ -317,7 +354,12 @@
       <h3>Claquettes & Sandales</h3>
       <ul class="article-list">
         <li class="card" data-brand="lv" data-category="accessories" data-price="450">
-          <img src="assets/products/accessories/lv-sandals.jpg" alt="Claquettes LV">
+          <div class="image-carousel">
+            <button class="carousel-btn left" onclick="prevImage(this)">&#10094;</button>
+            <img src="assets/products/accessoires/lv-sandals.jpg" alt="Claquettes LV" class="carousel-image active">
+            <!-- Ajoute d'autres images ici si besoin -->
+            <button class="carousel-btn right" onclick="nextImage(this)">&#10095;</button>
+          </div>
           <h4>LV Monogram Sandales</h4>
           <div class="sizes">
             <span class="size">40</span><span class="size">41</span><span class="size">42</span>
@@ -327,7 +369,11 @@
         </li>
 
         <li class="card" data-brand="dior" data-category="accessories" data-price="380">
-          <img src="assets/products/accessories/dior-sandals.jpg" alt="Claquettes Dior">
+          <div class="image-carousel">
+            <button class="carousel-btn left" onclick="prevImage(this)">&#10094;</button>
+            <img src="assets/products/accessoires/dior-sandals.jpg" alt="Claquettes Dior" class="carousel-image active">
+            <button class="carousel-btn right" onclick="nextImage(this)">&#10095;</button>
+          </div>
           <h4>Dior Oblique Sandales</h4>
           <div class="sizes">
             <span class="size">39</span><span class="size">40</span><span class="size">41</span>
@@ -337,7 +383,11 @@
         </li>
 
         <li class="card" data-brand="gucci" data-category="accessories" data-price="350">
-          <img src="assets/products/accessories/gucci-sandals.jpg" alt="Claquettes Gucci">
+          <div class="image-carousel">
+            <button class="carousel-btn left" onclick="prevImage(this)">&#10094;</button>
+            <img src="assets/products/accessoires/gucci-sandals.jpg" alt="Claquettes Gucci" class="carousel-image active">
+            <button class="carousel-btn right" onclick="nextImage(this)">&#10095;</button>
+          </div>
           <h4>Gucci GG Sandales</h4>
           <div class="sizes">
             <span class="size">40</span><span class="size">41</span>
@@ -352,7 +402,12 @@
       <h3>Lunettes</h3>
       <ul class="article-list">
         <li class="card" data-brand="dior" data-category="accessories" data-price="310">
-          <img src="assets/products/accessories/dior-sideral.jpg" alt="Lunettes Dior">
+          <div class="image-carousel">
+            <button class="carousel-btn left" onclick="prevImage(this)">&#10094;</button>
+            <img src="assets/products/accessoires/dior-sideral.jpg" alt="Lunettes Dior" class="carousel-image active">
+            <!-- Ajoute d'autres images ici si besoin -->
+            <button class="carousel-btn right" onclick="nextImage(this)">&#10095;</button>
+          </div>
           <h4>Dior Sideral</h4>
           <div class="sizes">
             <span class="size">Unique</span>
@@ -362,7 +417,11 @@
         </li>
 
         <li class="card" data-brand="gucci" data-category="accessories" data-price="290">
-          <img src="assets/products/accessories/gucci-gg.jpg" alt="Lunettes Gucci">
+          <div class="image-carousel">
+            <button class="carousel-btn left" onclick="prevImage(this)">&#10094;</button>
+            <img src="assets/products/accessoires/gucci-gg.jpg" alt="Lunettes Gucci" class="carousel-image active">
+            <button class="carousel-btn right" onclick="nextImage(this)">&#10095;</button>
+          </div>
           <h4>Gucci GG Acétate</h4>
           <div class="sizes">
             <span class="size">Unique</span>
@@ -372,7 +431,11 @@
         </li>
 
         <li class="card" data-brand="LV" data-category="accessories" data-price="330">
-          <img src="assets/products/accessories/LunetteLV.PNG" alt="Lunettes LV">
+          <div class="image-carousel">
+            <button class="carousel-btn left" onclick="prevImage(this)">&#10094;</button>
+            <img src="assets/products/accessoires/LunetteLV.PNG" alt="Lunettes LV" class="carousel-image active">
+            <button class="carousel-btn right" onclick="nextImage(this)">&#10095;</button>
+          </div>
           <h4>LV Reflector</h4>
           <div class="sizes">
             <span class="size">Unique</span>

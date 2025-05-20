@@ -136,3 +136,33 @@ document.addEventListener("DOMContentLoaded", () => {
     if (filter) filter.value = "all";
   });
 });
+
+function showImage(carousel, index) {
+  const images = carousel.querySelectorAll('.carousel-image');
+  images.forEach((img, i) => {
+    img.classList.toggle('active', i === index);
+  });
+  carousel.dataset.index = index;
+}
+
+function prevImage(btn) {
+  const carousel = btn.closest('.image-carousel');
+  const images = carousel.querySelectorAll('.carousel-image');
+  let index = parseInt(carousel.dataset.index || 0, 10);
+  index = (index - 1 + images.length) % images.length;
+  showImage(carousel, index);
+}
+
+function nextImage(btn) {
+  const carousel = btn.closest('.image-carousel');
+  const images = carousel.querySelectorAll('.carousel-image');
+  let index = parseInt(carousel.dataset.index || 0, 10);
+  index = (index + 1) % images.length;
+  showImage(carousel, index);
+}
+
+// Initialisation pour chaque carrousel
+document.querySelectorAll('.image-carousel').forEach(carousel => {
+  carousel.dataset.index = 0;
+  showImage(carousel, 0);
+});
