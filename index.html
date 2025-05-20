@@ -9,6 +9,13 @@
   <link rel="icon" href="assets/logo/logo.png" type="image/png">
 </head>
 <body>
+  <!-- Bandeau promo animé -->
+<div class="marquee-container">
+  <div class="marquee">
+    🎉 LANCEMENT IMMINENT DE LA BOUTIQUE ÉPHÉMÈRE — Profite de -10% avec le code : <strong>RG10</strong> — Coupons fidélité à gagner chaque semaine ! 🎉
+  </div>
+</div>
+
   <nav class="nav">
     <div class="nav-container">
       <a href="#"><img src="assets/logo/logo.png" alt="Logo Le Studio RG" class="logo"></a>
@@ -21,8 +28,8 @@
         <li><a href="#sneakers">Sneakers</a></li>
         <li><a href="#luxury">Prêt-à-porter</a></li>
         <li><a href="#accessories">Accessoires</a></li>
-        <li><a href="#delivery">Livraison</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#footer-contact">Livraison</a></li>
+        <li><a href="#footer-contact">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -302,22 +309,42 @@
     <h3>T-shirts, Polos & Chemises</h3>
     <ul class="article-list">
       <li class="card" data-brand="lv" data-category="clothing" data-price="320">
-        <img src="assets/products/clothing/lv-tshirt.jpg" alt="T-shirt LV Monogram">
-        <h4>LV Monogram T-Shirt</h4>
-        <div class="sizes">
-          <span class="size">S</span><span class="size">M</span><span class="size">L</span><span class="size">XL</span><span class="size">XXL</span>
-        </div>
-        <p class="price">320€</p>
-        <div class="description">Coton stretch, motif Jacquard.</div>
-      </li>
+  <div class="image-carousel">
+    <button class="carousel-btn left" onclick="prevImage(this)">&#10094;</button>
+    <img src="assets/products/LV/LVShirtNoir.png" alt="T-shirt LV Monogram" class="carousel-image active">
+    <img src="assets/products/LV/LVShirtNoir2.png" alt="T-shirt LV Monogram" class="carousel-image">
+    <img src="assets/products/LV/LVShirtNoir3.png" alt="T-shirt LV Monogram" class="carousel-image">
+    <img src="assets/products/LV/LVShirtNoir4B.png" alt="T-shirt LV Monogram" class="carousel-image">
+    <img src="assets/products/LV/LVShirtNoir5pioche.png" alt="T-shirt LV Monogram" class="carousel-image">
+    <img src="assets/products/LV/LVShirtBlanc2.png" alt="T-shirt LV Monogram" class="carousel-image">
+    <img src="assets/products/LV/LVShirtBlanc3.png" alt="T-shirt LV Monogram" class="carousel-image">
+    <img src="assets/products/LV/LVShirtBlanc4B (2).png" alt="T-shirt LV Monogram" class="carousel-image">
+    <img src="assets/products/LV/LVShirtBlanc5pioche.png" alt="T-shirt LV Monogram" class="carousel-image">
+    <button class="carousel-btn right" onclick="nextImage(this)">&#10095;</button>
+  </div>
+  <h4>LV T-Shirts</h4>
+  <div class="sizes">
+    <span class="size">S</span><span class="size">M</span><span class="size">L</span><span class="size">XL</span><span class="size">XXL</span>
+  </div>
+  <p class="price">320€</p>
+  <div class="description">Coton stretch, motif Jacquard.</div>
+</li>
 
       <li class="card" data-brand="gucci" data-category="clothing" data-price="280">
   <div class="image-carousel">
     <button class="carousel-btn left" onclick="prevImage(this)">&#10094;</button>
-    <img src="assets/products/clothing/gucci-interlock.jpg" alt="T-shirt Gucci" class="carousel-image active">
+        <img src="assets/products/gucci/image-Photoroom (7).png" alt="T-shirt Gucci" class="carousel-image active">
+    <img src="assets/products/gucci/image-Photoroom (1).png" alt="T-shirt Gucci" class="carousel-image active">
+    <img src="assets/products/gucci/image-Photoroom (2).png" alt="T-shirt Gucci" class="carousel-image active">
+    <img src="assets/products/gucci/image-Photoroom (3).png" alt="T-shirt Gucci" class="carousel-image active">
+    <img src="assets/products/gucci/image-Photoroom (5).png" alt="T-shirt Gucci" class="carousel-image active">
+    <img src="assets/products/gucci/image-Photoroom (6).png" alt="T-shirt Gucci" class="carousel-image active">
+
+    
+    
     <button class="carousel-btn right" onclick="nextImage(this)">&#10095;</button>
   </div>
-  <h4>Gucci Interlock</h4>
+  <h4>Gucci T-Shirts</h4>
   <div class="sizes">
     <span class="size">S</span><span class="size">M</span><span class="size">L</span><span class="size">XL</span><span class="size">XXL</span>
   </div>
@@ -328,7 +355,13 @@
       <li class="card" data-brand="dior" data-category="clothing" data-price="350">
   <div class="image-carousel">
     <button class="carousel-btn left" onclick="prevImage(this)">&#10094;</button>
-    <img src="assets/products/clothing/dior-oblique.jpg" alt="T-shirt Dior" class="carousel-image active">
+    <img src="assets/products/dior/image-Photoroom.png" alt="T-shirt Dior" class="carousel-image active">
+    <img src="assets/products/dior/image-Photoroom (1).png" alt="T-shirt Dior" class="carousel-image active">
+    <img src="assets/products/dior/image-Photoroom (2).png" alt="T-shirt Dior" class="carousel-image active">
+    <img src="assets/products/dior/image-Photoroom (3).png" alt="T-shirt Dior" class="carousel-image active">
+    <img src="assets/products/dior/image-Photoroom (4).png" alt="T-shirt Dior" class="carousel-image active">
+
+
     <button class="carousel-btn right" onclick="nextImage(this)">&#10095;</button>
   </div>
   <h4>Dior Oblique T-Shirt</h4>
@@ -495,16 +528,16 @@
       <strong>Contact :</strong> Une question ? Besoin d’aide ? Écris-nous à
       <a href="mailto:rgboutique869@gmail.com">rgboutique869@gmail.com</a>
       ou via Snapchat
-      <span>@STUDIORG (G7N-BAKI ou rayanne2b13)</span>.
+      <span>(G7N-BAKI ou rayanne2b13)</span>.
     </p>
     <div class="payment-info">
       <strong>Paiement accepté :</strong>
       <span class="payment-icons">
-        <img src="assets/logo/Bitcoin.svg.png" alt="Bitcoin" title="Bitcoin" class="pay-icon">
-        <img src="assets/logo/ETH.png" alt="Ethereum" title="Ethereum" class="pay-icon">
-        <img src="assets/logo/solana.png" alt="Solana" title="Solana" class="pay-icon">
+        <img src="assets/logo/Bitcoin.svg-removebg-preview.png" alt="Bitcoin" title="Bitcoin" class="pay-icon">
+        <img src="assets/logo/ETH-removebg-preview.png" alt="Ethereum" title="Ethereum" class="pay-icon">
+        <img src="assets/logo/solana-removebg-preview.png" alt="Solana" title="Solana" class="pay-icon">
       </span>
-      <span class="pay-text"> & (en physique) & Virement bancaire</span>
+      <span class="pay-text"> également en main propre & Virement bancaire</span>
     </div>
   </div>
   <div class="footer-bottom">

@@ -206,24 +206,36 @@ background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
   color: var(--text-light);
 }
 
-#brand-filter {
-  padding: 0.6rem 1.2rem;
-  border-radius: 30px;
-  border: 1px solid var(--primary);
-  background: var(--medium-gray);
-  color: var(--text-light);
-  font-size: 1rem;
-  cursor: pointer;
-  transition: var(--transition);
-  appearance: none;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23bfa97a'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
-  background-repeat: no-repeat;
-  background-position: right 1rem center;
-  background-size: 1rem;
+.filter-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 0 auto 32px auto;
+  padding: 14px 0 0 0;
 }
 
-#brand-filter:hover {
-  border-color: var(--text-light);
+.filter-group label {
+  color: #d4af37;
+  font-weight: 700;
+  font-size: 1.08rem;
+  letter-spacing: 1px;
+}
+
+#brand-filter {
+  background: #232323;
+  color: #fff;
+  border: 1.5px solid #d4af37;
+  border-radius: 8px;
+  padding: 7px 18px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  outline: none;
+  transition: border 0.2s;
+}
+
+#brand-filter:focus {
+  border-color: #fff;
 }
 
 /* CARTES PRODUIT AMÉLIORÉES */
@@ -568,12 +580,74 @@ footer p {
   height: 22px;
   vertical-align: middle;
   border-radius: 4px;
-  background: #fff;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  background: transparent; /* Enlève le fond blanc */
+  box-shadow: none;        /* Enlève l'ombre si besoin */
 }
 .pay-text {
   margin-left: 6px;
   color: #d4af37;
   font-weight: 500;
   letter-spacing: 0.5px;
+}
+
+/* MARQUEE */
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  background: #181818;
+  border-bottom: 2px solid #d4af37;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  color: #fff;
+  font-size: 1.08rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 10px 0;
+  animation: marquee 18s linear infinite;
+}
+
+.marquee strong {
+  color: #d4af37;
+  letter-spacing: 2px;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(100%);}
+  100% { transform: translateX(-100%);}
+}
+
+/* HERO SECTION */
+.hero {
+  background: linear-gradient(90deg, #181818 60%, #232323 100%);
+  border: 2px solid #d4af37;
+  border-radius: 18px;
+  margin: 32px auto 24px auto;
+  max-width: 700px;
+  padding: 32px 28px 22px 28px;
+  box-shadow: 0 4px 24px 0 rgba(212,175,55,0.08), 0 0 0 2px #d4af37 inset;
+  text-align: center;
+  position: relative;
+}
+
+.hero h2 {
+  color: #d4af37;
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.18);
+}
+
+.hero p {
+  color: #fff;
+  font-size: 1.18rem;
+  font-weight: 500;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.13);
 }
