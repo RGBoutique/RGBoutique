@@ -166,3 +166,51 @@ document.querySelectorAll('.image-carousel').forEach(carousel => {
   carousel.dataset.index = 0;
   showImage(carousel, 0);
 });
+
+document.querySelectorAll('.counter').forEach(counter => {
+  const updateCount = () => {
+    const target = +counter.getAttribute('data-count');
+    const count = +counter.innerText;
+    const speed = 18; // plus petit = plus rapide
+    if (count < target) {
+      counter.innerText = Math.ceil(count + (target - count) / speed);
+      setTimeout(updateCount, 20);
+    } else {
+      counter.innerText = target;
+    }
+  };
+  updateCount();
+});
+
+// Carrousel d'avis clients
+let testimonialIndex = 0;
+const testimonials = document.querySelectorAll('.testimonial-carousel .testimonial');
+const showTestimonial = (idx) => {
+  testimonials.forEach((el, i) => {
+    el.classList.toggle('active', i === idx);
+  });
+};
+window.prevTestimonial = function() {
+  testimonialIndex = (testimonialIndex - 1 + testimonials.length) % testimonials.length;
+  showTestimonial(testimonialIndex);
+};
+window.nextTestimonial = function() {
+  testimonialIndex = (testimonialIndex + 1) % testimonials.length;
+  showTestimonial(testimonialIndex);
+};
+// Auto défilement toutes les 7s
+setInterval(() => {
+  window.nextTestimonial();
+}, 7000);
+showTestimonial(testimonialIndex);
+
+// Bouton remonter en haut
+const scrollBtn = document.getElementById('scrollTopBtn');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    scrollBtn.style.display = 'block';
+  } else {
+    scrollBtn.style.display = 'none';
+  }
+});
+scrollBtn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
