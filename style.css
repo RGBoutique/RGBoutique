@@ -475,6 +475,19 @@ footer p {
   .section {
     padding: 3rem 1rem;
   }
+
+  .bottom-row {
+    flex-direction: column;
+    gap: 24px;
+    margin: 32px auto 0 auto;
+    max-width: 98vw;
+  }
+  .bottom-row .testimonial-carousel,
+  .bottom-row .alert-warning-card {
+    max-width: 100%;
+    width: 100%;
+    align-self: stretch;
+  }
 }
 
 @media (max-width: 576px) {
@@ -988,4 +1001,19 @@ footer p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .bottom-row {
+    flex-direction: column;
+    gap: 24px;
+    margin: 32px auto 0 auto;
+    max-width: 98vw;
+  }
+  .bottom-row .testimonial-carousel,
+  .bottom-row .alert-warning-card {
+    max-width: 100%;
+    width: 100%;
+    align-self: stretch;
+  }
 }
