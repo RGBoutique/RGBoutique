@@ -142,12 +142,11 @@ a {
 /* HEADER STYLISÉ */
 .header {
   text-align: center;
-  padding: 4.2rem 1rem 5rem 1rem; /* réduit le padding-top à 4.2rem */
+  padding: 4.2rem 1rem 5rem 1rem;
   background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
   position: relative;
-  margin-top: 0;
+  margin-top: 64px; /* Augmente la valeur pour descendre encore le bloc */
 }
-
 .header h1 {
   font-size: 3.5rem;
   color: var(--primary);
