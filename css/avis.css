@@ -84,18 +84,21 @@
 .avis-mean-note {
   display: flex;
   align-items: center;
-  gap: 0.7em;
-  font-size: 2.3rem;
+  gap: 0.5em;
+  font-size: 1.5rem;
   font-family: 'DM Serif Display', serif;
   color: #ffd700;
   margin-bottom: 0.2em;
 }
 .avis-mean-score {
-  font-size: 2.3rem;
+  font-size: 1.5rem;
   color: #ffd700;
   font-family: 'DM Serif Display', serif;
   font-weight: 700;
   margin-right: 0.1em;
+  /* Animation lueur dorée */
+  text-shadow: 0 0 8px #ffd70088, 0 0 16px #fff20044;
+  animation: gold-glow 1.8s infinite alternate;
 }
 .avis-mean-stars {
   display: flex;
@@ -103,10 +106,13 @@
 }
 .avis-mean-stars .star {
   color: #ffd700;
-  font-size: 1.6em;
+  font-size: 1.15em;
   margin-right: 2px;
   vertical-align: middle;
   position: relative;
+  /* Animation lueur dorée */
+  text-shadow: 0 0 8px #ffd70088, 0 0 16px #fff20044;
+  animation: gold-glow 1.8s infinite alternate;
 }
 .avis-mean-stars .half {
   position: relative;
@@ -137,6 +143,16 @@
   margin-top: 0.3em;
   text-align: left;
 }
+@keyframes gold-glow {
+  0% {
+    text-shadow: 0 0 6px #ffd70055, 0 0 12px #fff20022;
+    filter: brightness(1);
+  }
+  100% {
+    text-shadow: 0 0 16px #ffd700cc, 0 0 32px #fff20088;
+    filter: brightness(1.15);
+  }
+}
 @media (max-width: 600px) {
   .avis-mean-block {
     flex-direction: column;
@@ -159,12 +175,12 @@
     word-break: break-word;
   }
   .avis-mean-note {
-    font-size: 1.4rem;
+    font-size: 1.15rem;
+    gap: 0.25em;
     flex-wrap: wrap;
-    gap: 0.3em;
   }
   .avis-mean-stars .star {
-    font-size: 1.1em;
+    font-size: 0.95em;
   }
   .testimonial-list {
     flex-direction: column;
