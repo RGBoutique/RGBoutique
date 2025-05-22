@@ -137,3 +137,44 @@
   margin-top: 0.3em;
   text-align: left;
 }
+@media (max-width: 600px) {
+  .avis-mean-block {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0.5rem;
+    gap: 1rem;
+    max-width: 98vw;
+    min-width: 0;
+  }
+  .trustpilot-logo {
+    height: 36px;
+    margin-bottom: 0.5em;
+    max-width: 90vw;
+    width: auto;
+  }
+  .avis-mean-title,
+  .avis-mean-note,
+  .avis-mean-trust {
+    text-align: center;
+    word-break: break-word;
+  }
+  .avis-mean-note {
+    font-size: 1.4rem;
+    flex-wrap: wrap;
+    gap: 0.3em;
+  }
+  .avis-mean-stars .star {
+    font-size: 1.1em;
+  }
+  .testimonial-list {
+    flex-direction: column;
+    gap: 1.2rem 0;
+    align-items: center;
+  }
+  .testimonial {
+    max-width: 98vw;
+    min-width: 0;
+    padding: 1rem 0.5rem;
+    box-sizing: border-box;
+  }
+}
