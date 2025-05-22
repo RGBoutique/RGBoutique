@@ -1,0 +1,139 @@
+.testimonial-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem 2rem;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+.testimonial {
+  background: #232323;
+  border: 1.5px solid #bfa97a;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px 0 #d4af3740;
+  padding: 1.5rem 2rem;
+  max-width: 350px;
+  min-width: 260px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.testimonial-list .testimonial {
+  display: flex !important;
+  flex-direction: column;
+}
+.testimonial-stars {
+  margin-bottom: 0.5em;
+  user-select: none;
+}
+.testimonial-stars .star {
+  color: #ffd700;
+  font-size: 1.3em;
+  margin-right: 2px;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: color 0.2s;
+  opacity: 0.7;
+}
+.testimonial-stars .star.active,
+.testimonial-stars .star:hover,
+.testimonial-stars .star.hovered {
+  color: #ffd700;
+  opacity: 1;
+}
+.testimonial-author {
+  margin-top: 1em;
+  color: #bfa97a;
+  font-style: italic;
+  font-size: 1.05em;
+}
+.avis-mean-block {
+  display: flex;
+  align-items: center;
+  gap: 2.2rem;
+  margin-bottom: 2.5rem;
+  background: #232323;
+  border-radius: 18px;
+  padding: 1.5rem 2.5rem;
+  box-shadow: 0 2px 24px 0 #d4af3740;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+}
+.trustpilot-logo {
+  height: 54px;
+  width: auto;
+  object-fit: contain;
+  background: transparent; /* plus de fond blanc */
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+  display: block;
+}
+.avis-mean-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.25rem;
+  color: #bfa97a;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.4em;
+  text-align: left;
+  text-transform: uppercase;
+}
+.avis-mean-note {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  font-size: 2.3rem;
+  font-family: 'DM Serif Display', serif;
+  color: #ffd700;
+  margin-bottom: 0.2em;
+}
+.avis-mean-score {
+  font-size: 2.3rem;
+  color: #ffd700;
+  font-family: 'DM Serif Display', serif;
+  font-weight: 700;
+  margin-right: 0.1em;
+}
+.avis-mean-stars {
+  display: flex;
+  align-items: center;
+}
+.avis-mean-stars .star {
+  color: #ffd700;
+  font-size: 1.6em;
+  margin-right: 2px;
+  vertical-align: middle;
+  position: relative;
+}
+.avis-mean-stars .half {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 0.8em;
+}
+.avis-mean-stars .half::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: #232323;
+  z-index: 1;
+}
+.avis-mean-txt {
+  font-size: 1.15rem;
+  color: #fff;
+  font-family: 'Cormorant Garamond', serif;
+  margin-left: 0.2em;
+}
+.avis-mean-trust {
+  font-size: 1rem;
+  color: #bfa97a;
+  font-family: 'Cormorant Garamond', serif;
+  margin-top: 0.3em;
+  text-align: left;
+}
