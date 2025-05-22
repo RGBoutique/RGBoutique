@@ -42,10 +42,21 @@
   opacity: 1;
 }
 .testimonial-author {
-  margin-top: 1em;
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
   color: #bfa97a;
   font-style: italic;
   font-size: 1.05em;
+  margin-top: 1em;
+}
+.testimonial-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #bfa97a;
+  background: #181818;
 }
 .avis-mean-block {
   display: flex;
