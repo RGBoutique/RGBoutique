@@ -1048,15 +1048,6 @@ footer p {
   white-space: nowrap;
 }
 
-/* Responsive : sur petits écrans, les badges passent à la ligne */
-@media (max-width: 600px) {
-  .badges {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
-  }
-}
-
 /* Affiche tous les témoignages sur la page avis.html */
 .avis-page .testimonial-list .testimonial {
   display: flex !important;
