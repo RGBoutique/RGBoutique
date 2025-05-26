@@ -1063,3 +1063,25 @@ footer p {
   flex-direction: column;
   transition: none;
 }
+
+.price-flash {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.25em;
+  animation: flash-glow 1s infinite alternate;
+  letter-spacing: 0.03em;
+  text-shadow: 0 0 8px #ffd700, 0 0 16px #ffd70099;
+}
+
+@keyframes flash-glow {
+  0% {
+    color: #fff;
+    text-shadow: 0 0 8px #ffd700, 0 0 16px #ffd70099;
+    filter: brightness(1.2);
+  }
+  100% {
+    color: #ffd700;
+    text-shadow: 0 0 18px #fff200, 0 0 32px #ffd700cc;
+    filter: brightness(1.5);
+  }
+}

@@ -499,7 +499,7 @@
         <li class="card" data-brand="cartier" data-category="accessories" data-price="310">
           <div class="image-carousel">
             <button class="carousel-btn left" onclick="prevImage(this)">&#10094;</button>
-            <img src="assets/products/accessoires/LunetteCartier.png" alt="Lunette cartier" class="carousel-image active">
+            <img src="assets/products/accessories/LunetteCartier.png" alt="Lunette cartier" class="carousel-image active">
             <!-- Ajoute d'autres images ici si besoin -->
             <button class="carousel-btn right" onclick="nextImage(this)">&#10095;</button>
           </div>
@@ -515,7 +515,7 @@
         <li class="card" data-brand="gucci" data-category="accessories" data-price="290">
           <div class="image-carousel">
             <button class="carousel-btn left" onclick="prevImage(this)">&#10094;</button>
-            <img src="assets/products/accessoires/LunetteGucci.png" alt="Lunettes Gucci" class="carousel-image active">
+            <img src="assets/products/accessories/LunetteGucci.png" alt="Lunettes Gucci" class="carousel-image active">
             <button class="carousel-btn right" onclick="nextImage(this)">&#10095;</button>
           </div>
           <span class="badge badge-animated">Plusieurs couleurs dispo</span>
@@ -530,7 +530,7 @@
         <li class="card" data-brand="LV" data-category="accessories" data-price="330">
           <div class="image-carousel">
             <button class="carousel-btn left" onclick="prevImage(this)">&#10094;</button>
-            <img src="assets/products/accessoires/LunetteLV.png" alt="Lunettes LV" class="carousel-image active">
+            <img src="assets/products/accessories/LunetteLV.png" alt="Lunettes LV" class="carousel-image active">
             <button class="carousel-btn right" onclick="nextImage(this)">&#10095;</button>
           </div>
           <span class="badge badge-animated">Plusieurs couleurs dispo</span>
@@ -548,28 +548,30 @@
 
 <div class="subcategory">
   <h3 style="color:#fff; text-align:center; font-size:2rem; margin-top:2.5rem; margin-bottom:1.2rem; letter-spacing:0.02em;">
-    Casquettes & Sacoches
+    Casquettes, Sacoches & Shorts
   </h3>
   <ul class="article-list">
-    <li class="card" data-brand="gucci" data-category="accessories" data-price="180">
-      <div class="image-carousel">
-        <button class="carousel-btn left" onclick="prevImage(this)">&#10094;</button>
-        <img src="assets/products/accessoires/" alt="Casquette Gucci" class="carousel-image active">
-        <button class="carousel-btn right" onclick="nextImage(this)">&#10095;</button>
-      </div>
-      <span class="badge badge-animated nouveaute">Nouveauté</span>
-      <h4>Casquette Gucci GG</h4>
-      <div class="sizes">
-        <span class="size">U</span>
-      </div>
-      <p class="price">70€</p>
-      <div class="description">Toile GG suprême, réglable, coloris beige/ébène.</div>
-    </li>
+    <li class="card" data-brand="gucci" data-category="accessories" data-price="180" style="position:relative;">
+  <span class="badge badge-animated nouveaute" style="position:absolute; top:14px; left:14px; z-index:2;">Nouveauté</span>
+  <div class="image-carousel">
+    <button class="carousel-btn left" onclick="prevImage(this)">&#10094;</button>
+    <img src="assets/products/accessories/Casquette G1.png" alt="Casquette Gucci" class="carousel-image active">
+    <img src="assets/products/accessories/Casquette G2.png" alt="Casquette Gucci" class="carousel-image active">
+    <img src="assets/products/accessories/Casquette G3.png" alt="Casquette Gucci" class="carousel-image active">
+    <button class="carousel-btn right" onclick="nextImage(this)">&#10095;</button>
+  </div>
+  <h4>Casquette Gucci GG</h4>
+  <div class="sizes">
+    <span class="size">U</span>
+  </div>
+  <p class="price">70€</p>
+  <div class="description">Toile GG suprême, réglable, coloris beige/ébène.</div>
+</li>
     <li class="card" data-brand="lv" data-category="accessories" data-price="220">
       <div class="image-carousel">
         <button class="carousel-btn left" onclick="prevImage(this)">&#10094;</button>
-        <img src="assets/products/accessoires/LV SACCOCHE" alt="Sacoche LV" class="carousel-image active">
-        <img src="assets/products/accessoires/LV SACCOCHE 2" alt="Sacoche LV" class="carousel-image active">
+        <img src="assets/products/accessories/LV SACCOCHE.png" alt="Sacoche LV" class="carousel-image active">
+        <img src="assets/products/accessories/LV SACCOCHE 2.png" alt="Sacoche LV" class="carousel-image active">
         <button class="carousel-btn right" onclick="nextImage(this)">&#10095;</button>
       </div>
       <span class="badge badge-animated">Plusieurs couleurs dispo</span>
@@ -583,17 +585,70 @@
     <li class="card" data-brand="dior" data-category="accessories" data-price="160">
       <div class="image-carousel">
         <button class="carousel-btn left" onclick="prevImage(this)">&#10094;</button>
-        <img src="assets/products/accessoires/casquette-dior.png" alt="Casquette Dior" class="carousel-image active">
+        <img src="assets/products/short/short luxe monogramme.png" alt="Short Luxe" class="carousel-image active">
+        <img src="assets/products/short/monogramme 2.png" alt="Short Luxe" class="carousel-image active">
+        <img src="assets/products/short/monogramme 3.png" alt="Short Luxe" class="carousel-image active">
+        <img src="assets/products/short/monogramme 4.png" alt="Short Luxe" class="carousel-image active">
         <button class="carousel-btn right" onclick="nextImage(this)">&#10095;</button>
       </div>
       <span class="badge badge-animated">Edition limitée</span>
-      <h4>Casquette Dior Oblique</h4>
+      <h4>Short Luxe Monogramme (LV, Gucci...)</h4>
       <div class="sizes">
         <span class="size">U</span>
       </div>
-      <p class="price">70€</p>
-      <div class="description">Motif oblique iconique, fermeture réglable.</div>
+      <p class="price">
+        <span style="text-decoration:line-through; color:#bfa97a; font-size:1.1em; margin-right:0.5em;">90€</span>
+        <span class="price-flash">70€</span>
+      </p>
+      <div class="description">
+        Motif oblique iconique, fermeture réglable.<br>
+        <span style="color:#ffd700; font-weight:500;">Idéal pour le bain d'été, mais libre d'utilisation !</span>
+      </div>
     </li>
+  </ul>
+</div>
+
+<section id="pack-outfit" class="section fade-in">
+  <h2 class="section-title" style="color:#bfa97a; text-align:center; font-size:2.1rem; font-weight:500; letter-spacing:0.02em; margin-bottom:1.3em;">
+    Pack Outfit Mystère
+  </h2>
+</section>
+
+<div class="subcategory">
+  <h2 class="section-title" style="color:#fff; text-align:center; font-size:2.1rem; margin-top:2.5rem; margin-bottom:1.2rem; letter-spacing:0.02em;">
+    Pack Outfit Mystère
+  </h2>
+  <p style="color:#bfa97a; text-align:center; font-size:1.13rem; margin-bottom:2rem;">
+    Recevez un ensemble complet (haut, bas, accessoire) soigneusement sélectionné <b style="color:#ffd700;">selon la saison</b> et les tendances du moment.<br>
+    <span style="display:inline-block; margin-top:0.7em; font-size:1.18rem; color:#fff; background:#ffd700; padding:0.18em 0.7em; border-radius:8px; font-weight:700; letter-spacing:0.02em;">
+      Saison actuelle : ÉTÉ ☀️
+    </span>
+    <br>
+    <span style="display:block; margin-top:0.5em; color:#ffd700; font-weight:600;">Profitez d’un look exclusif, prêt à porter, parfaitement adapté à l’été !</span>
+  </p>
+  <ul class="article-list">
+    <li class="card" data-brand="mystere" data-category="pack" data-price="129" style="position:relative;">
+  <span class="badge badge-animated nouveaute" style="position:absolute; top:14px; left:14px; z-index:2;">Nouveauté</span>
+  <div class="image-carousel">
+    <button class="carousel-btn left" onclick="prevImage(this)">&#10094;</button>
+    <img src="assets/products/pack/outfit1mystere.png" alt="Pack Outfit Mystère" class="carousel-image active">
+    <img src="assets/products/pack/outfit2mystere.png" alt="Pack Outfit Mystère" class="carousel-image">
+    <button class="carousel-btn right" onclick="nextImage(this)">&#10095;</button>
+  </div>
+  <h4>Pack Outfit Mystère</h4>
+  <div class="sizes">
+    <span class="size">S</span>
+    <span class="size">M</span>
+    <span class="size">L</span>
+    <span class="size">XL</span>
+    <span class="size">XXL</span>
+  </div>
+  <p class="price">
+    <span style="text-decoration:line-through; color:#bfa97a; font-size:1.1em; margin-right:0.5em;">149€</span>
+    <span class="price-flash">129€</span>
+  </p>
+  <div class="description">Un outfit complet surprise, sélectionné par nos soins pour un style unique et de saison.</div>
+</li>
   </ul>
 </div>
 
