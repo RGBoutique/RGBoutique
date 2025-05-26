@@ -66,6 +66,7 @@
         <option value="cartier">Cartier</option>
         <option value="CP">CP</option>
         <option value="balmain">Balmain</option>
+        
       </select>
     </div>
     
@@ -427,11 +428,19 @@
         <div class="description">Coton épais, broderie précise.</div>
       </li>
 
-      <li class="card" data-brand="balmain" data-category="clothing" data-price="380">
-        <img src="assets/products/clothing/balenciaga-sweat.jpg" alt="CP Company">
+      <li class="card" data-brand="CP" data-category="clothing" data-price="380">
+        <div class="image-carousel">
+          <button class="carousel-btn left" onclick="prevImage(this)">&#10094;</button>
+          <img src="assets/products/CP/CP1.png" alt="CP Company" class="carousel-image active">
+          <img src="assets/products/CP/CP2.png" alt="CP Company" class="carousel-image">
+          <img src="assets/products/CP/CP3.png" alt="CP Company" class="carousel-image">
+          <button class="carousel-btn right" onclick="nextImage(this)">&#10095;</button>
+        </div>
         <h4>CP</h4>
         <div class="sizes">
-          <span class="size">S</span><span class="size">M</span><span class="size">L</span>
+          <span class="size">S</span>
+          <span class="size">M</span>
+          <span class="size">L</span>
         </div>
         <p class="price">380€</p>
         <div class="description">Coupe oversized, logo avant.</div>
@@ -555,9 +564,9 @@
   <span class="badge badge-animated nouveaute" style="position:absolute; top:14px; left:14px; z-index:2;">Nouveauté</span>
   <div class="image-carousel">
     <button class="carousel-btn left" onclick="prevImage(this)">&#10094;</button>
-    <img src="assets/products/accessories/Casquette G1.png" alt="Casquette Gucci" class="carousel-image active">
-    <img src="assets/products/accessories/Casquette G2.png" alt="Casquette Gucci" class="carousel-image active">
-    <img src="assets/products/accessories/Casquette G3.png" alt="Casquette Gucci" class="carousel-image active">
+<img src="assets/products/accessories/casquette-g1.png" alt="Casquette Gucci" class="carousel-image active">
+<img src="assets/products/accessories/casquette-g2.png" alt="Casquette Gucci" class="carousel-image">
+<img src="assets/products/accessories/casquette-g3.png" alt="Casquette Gucci" class="carousel-image">
     <button class="carousel-btn right" onclick="nextImage(this)">&#10095;</button>
   </div>
   <h4>Casquette Gucci GG</h4>
@@ -570,8 +579,8 @@
     <li class="card" data-brand="lv" data-category="accessories" data-price="220">
       <div class="image-carousel">
         <button class="carousel-btn left" onclick="prevImage(this)">&#10094;</button>
-        <img src="assets/products/accessories/LV SACCOCHE.png" alt="Sacoche LV" class="carousel-image active">
-        <img src="assets/products/accessories/LV SACCOCHE 2.png" alt="Sacoche LV" class="carousel-image active">
+        <img src="assets/products/accessories/lv-saccoche-2.png" alt="Sacoche LV" class="carousel-image active">
+        <img src="assets/products/accessories/lv-saccoche.png" alt="Sacoche LV" class="carousel-image">
         <button class="carousel-btn right" onclick="nextImage(this)">&#10095;</button>
       </div>
       <span class="badge badge-animated">Plusieurs couleurs dispo</span>
